@@ -1,0 +1,159 @@
+/* Global */
+body {
+    background: #D9D7D9;
+    font-family: 'Roboto',
+    sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.block {
+    display: none;
+}
+
+button {
+    border: none;
+    background: #fff;
+    padding: 1rem 0;
+    width: 100%;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    border: none;
+    background: #f7f3f3;
+    padding: 1rem 0;
+}
+
+/* Header */
+header {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+    background: #A4A5A2;
+}
+
+/* Hyperlinks */
+.hyperlinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hyperlinks nav {
+    margin-right: 1rem;
+}
+
+.hyperlinks nav ul {
+    cursor: pointer;
+    text-align: end;
+    list-style: none;
+}
+
+.hyperlinks nav ul a li {
+    margin-left: .5rem;
+    display: inline-block;
+    font-family: 'Glory', sans-serif;
+    font-weight: 500;
+}
+
+.hyperlinks nav ul a li:hover {
+    transition: .2s;
+    color: #c3d7f7;
+}
+
+.anchor {
+    color: #6ea4fa;
+    padding: 5rem 0 0;
+}
+
+/* Logo, Page Name */
+.logo, .page-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: default;
+}
+
+/* Search bar */
+#myInput {
+    background-image: url("https://www.w3schools.com/css/searchicon.png");
+    background-repeat: no-repeat;
+    background-position: 7px 7px;
+    background-size: 1.5rem;
+    padding: .5rem 1.2rem .5rem 2.5rem;
+    font-size: 18px;
+    border: 2px #ddd solid;
+    width: calc(100% - 3.8rem);
+    margin: 6rem 0 0;
+}
+
+/* Main */
+main {
+    margin: auto;
+    width: min(90vw, 700px);
+}
+
+.content {
+    list-style: none;
+    text-align: center;
+}
+
+.search {
+    display: none;
+}
+
+.search.active {
+    display: block;
+}
+
+.search .content {
+    background: #fff;
+    padding: 1rem .5rem;
+    margin: 1rem 0;
+    border-radius: .25rem;
+}
+
+.search .content:hover {
+    background: #f7f3f3;
+}
+
+/* Footer */
+footer {
+    bottom: 0;
+    text-align: end;
+    width: 100%;
+
+    background: #A4A5A2;
+    padding: 1rem 0 .2rem 0;
+}
+
+.footer-midia a {
+    margin-left: 1rem;
+}
+
+.copy {
+    padding-bottom: 10px;
+    opacity: 0.6;
+    text-align: center;
+}
