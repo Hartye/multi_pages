@@ -1,0 +1,8 @@
+body {
+  padding: 5rem 0 0;
+}
+
+.page-initial-image {
+  display: flex;
+  flex-direction: column;
+}

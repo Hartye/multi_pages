@@ -81,7 +81,7 @@ header {
     color: #c3d7f7;
 }
 
-.anchor {
+.anchor, .anchor a {
     color: #6ea4fa;
     padding: 5rem 0 0;
 }

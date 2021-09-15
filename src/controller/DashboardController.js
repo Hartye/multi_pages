@@ -19,4 +19,12 @@ module.exports = {
       return res.redirect("/");
     }
   },
+
+  async pages(req, res) {
+    let id = req.params.id;
+
+    const page = await Search.getPage(id);
+
+    return res.render("pages", { page });
+  },
 };

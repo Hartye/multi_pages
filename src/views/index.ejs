@@ -86,7 +86,7 @@
         </p>
         <img src="/images/trueColors.jpg" alt="Life Is Strange True Colors" />
 
-        <h2 class="anchor" id="music">Music</h2>
+        <h2 class="anchor" id="music"><a href="/page/2">Music</a></h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla odio
           esse sunt ipsam culpa consequuntur sequi reprehenderit, inventore
@@ -124,16 +124,17 @@
         <ul class="content">
           <% pages.forEach(page => { %>
           <li>
-            <h2><a href="#"><%= page.title %></a></h2>
+            <h2><a href="/page/<%= page.id %> "><%= page.title %></a></h2>
             <img src="<%= page.img %> " alt="Page image" />
             <p><%= page.description %></p>
           </li>
+          <hr />
           <% }) %>
         </ul>
       </div>
     </main>
 
-    <%- include("parts/footer.ejs") %>
+    <%- include("parts/footer.ejs")%>
     <script src="/script/script.js"></script>
   </body>
 </html>

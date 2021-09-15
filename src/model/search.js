@@ -10,4 +10,14 @@ module.exports = {
 
     return data;
   },
+
+  async getPage(id) {
+    const db = await Database();
+
+    const data = await db.get(`SELECT * FROM pages WHERE id = ${id}`);
+
+    await db.close();
+
+    return data;
+  },
 };

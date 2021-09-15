@@ -20,15 +20,29 @@
     />
     <title>Document</title>
     <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="/style/pages.css" />
   </head>
 
   <body onload="DOM.loadDate()">
+    <%- include("./parts/header") %>
 
     <main>
-      
+      <div class="page-initial-image">
+        <img src="<%= page.img %> " alt="Game Image" />
+      </div>
+      <div class="page-content">
+        <span class="description">
+          <h4><%= page.description %></h4>
+        </span>
+        <h2 class="anchor" id="content">Content</h2>
+        <span>
+          <p><%= page.content %></p>
+        </span>
+      </div>
     </main>
-    
-    <%- include("parts/footer.ejs") %>
+
+    <footer><%- include("./parts/footer.ejs") %></footer>
+
     <script src="/script/script.js"></script>
   </body>
 </html>
